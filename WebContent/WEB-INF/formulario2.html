@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Informacion sobre el producto</title>
+<link rel="stylesheet" type="text/css" href="./css/estilos.css" media="screen" />
+</head>
+<body class="text-center">
+
+<h1 class="titulo">Información sobre el producto</h1>
+	<h4>
+	<form action="#" method="post" enctype="multipart/form-data">
+	
+		<fieldset name="Datos basicos">
+		
+		<legend>Datos Basicos</legend>
+		
+		<br>
+		
+		<label for="nombre">Nombre </label>
+		
+		<br>
+		
+		<input type = "text" id="nombre" size="50" name="nombre" value = "" maxlength="30"/>
+		
+		<br><br>
+		
+		<label for="descripcion">Descripción</label> <br/>
+		
+    	<textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea>
+    	
+    	<br><br>
+    	
+    	<label for="adjunto" >Foto &nbsp;</label>
+		
+		<input type="file" id="adjunto" name="adjunto"/>
+		
+		<br><br>
+		
+		<label for="contador" >Añadir contador de visitas</label>
+		
+		<input name="contador" id="contador" type="checkbox" value="si"/>
+		
+		<br>
+	
+	</fieldset>
+	<br>
+	
+	<fieldset name="datos economicos">
+	
+	<legend>Datos económicos</legend>
+	
+		<label for="precio" >Precio	&nbsp;</label>
+	
+		<input type = "number" id="precio" size="7" name="precio" value = ""/><label>&nbsp; $ &nbsp; &nbsp; &nbsp;</label>
+	
+		<label for="impuesto" >&nbsp; &nbsp; &nbsp; impuestos</label>
+	
+		<select id="impuesto" name="impuesto">
+	
+		<option value="4%" selected="selected">4%</option>
+	
+		<option value="7%">7%</option>
+	
+		<option value="16%">16%</option>
+	
+		<option value="25%">25%</option>
+	
+		</select>
+	
+		<br><br>
+	
+		<label for="promo" >Promocion</label>
+	
+		<br>
+		<div class="opciones">
+		<input type = "radio" id="ninguno" name="promo" value = "ninguno" checked="checked"/>
+	
+		<label for="ninguno" >Ninguno </label>
+	
+		<br>
+	
+		<input type = "radio" id="tg" name="promo" value = "transporte gratuito"/>
+	
+		<label for="tg" >Transporte Gratuito </label>
+	
+		<br>
+	
+		<input type = "radio" id="d5%" name="promo" value = "descuesnto 5%"/>
+	
+		<label for="d5%" >Descuento del 5% </label>
+		</div>
+	
+	</fieldset>
+		<br><br>
+
+		<input type="submit" id="submit" name="enviar" value="Enviar" />
+		<input type="reset" id="reset" name="limpiar" value="Borrar datos del formulario" />
+	
+	</form></h4>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+
+body {
+  background: lightblue url("img_tree.gif") no-repeat fixed center;
+}
+
+p { color: rgb(0, 0, 255); font-family: Verdana; }
+
+form{
+	margin-left: 530px;
+  	margin-right: 530px;
+}
+
+fieldset {
+  background-color: #eeeeee;
+
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+input:focus {
+	background-color: #ffdfdf;
+}
+
+label{
+	font: 15px Arial, sans-serif;
+}
+
+form legend {
+	color:#ffffff;
+	font: 15px Arial, sans-serif;
+}
+
+.titulo{
+	text-shadow: 2px 2px #808080;
+	margin-left: 550px;
+  	margin-right: 550px;
+	background-color: #eeeeee;
+	font: 25px Arial, sans-serif;
+}
+
+.subtitulo {
+	color:white;
+	font: 15px Arial, sans-serif;
+	}
+	
+.opciones{
+  text-align: left;
+}
+	
+#reset {color:red;}
+

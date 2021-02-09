@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tablas</title>
+<style type="text/css">
+table, th, td{
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<h1><center>Ejercicio tablas</h1>
+
+<br>
+
+<h1><center>
+<table>
+	<caption>Su pedido</caption>
+	<tr>
+	<th scope="col">nombre producto</th>
+	<th scope="col">precio unitario</th>
+	<th scope="col">unidades</th>
+	<th scope="col">subtotal</th></tr>
+	<tr>
+		<td>Reproductor mp3 (30gb)</td>
+		<td>192.02</td>
+		<td>1</td>
+		<td>192.02</td>
+	</tr>
+	<tr>
+		<td>Fundas de colores</td>
+		<td>2.50</td>
+		<td>5</td>
+		<td>12.50</td>
+	</tr>
+	<tr>
+		<td>Reproductor de radio & control remoto</td>
+		<td>12.99</td>
+		<td>1</td>
+		<td>12.99</td>
+	</tr>
+	<tr>
+		<td><center><strong>TOTAL</strong></center></td>
+		<td><center>-</center></td>
+		<td>7</td>
+		<td>207.51</td>
+	</tr>
+
+</table></center></h1>
+<br>
+<h1><center>
+<table>
+	<caption>resultado de la búsqueda</caption>
+	<tr><th scope="col">Imagen</th>
+	<th scope="col">Datos</th></tr>
+	
+	<tr>
+		<td><img src="imagenes/portatil.png" alt="portatil" height = 100 width= 100/></td>
+		<td><a href="#">portatil-3 GHz-4 GB RAM </a><br>
+		<br><a href="#">comprar:</a> <del>2990$ </del>2599$</td>
+	</tr>
+	
+	<tr>
+		<td><img src="imagenes/videocamara.png" alt="videocamara" height = 100 width= 100 /></td>
+		<td><a href="#">Videocamara-alta Definicion 1080p-60GB</a><br><br><a href= "#">Comprar:</a><del>1099$ </del>999$</td>
+	</tr>
+	
+	<tr>
+		<td><img src="imagenes/televisor.png" alt="televisor" height = 100 width= 100 /></td>
+		<td><a href= "#">Televisor-46"-Full HD</a><br><br><a href= "#">Comprar:</a><del>1999$ </del>1799$</td>
+	</tr>
+
+	<tr>
+		<td><img src="imagenes/movil.png" alt="movil" height = 100 width= 100 /></td>
+		<td><a href= "#">Móvil-3g3Wi-Fi-8gb</a><br><br><a href= "#">Comprar:</a><del>399$ </del>349$</td>
+	</tr>
+ <br>
+</table></center></h1>
+
+        <h1>Fusión de filas</h1>
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td rowspan="3">C</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">E</td>
+                    <td>F</td>
+                    <td rowspan="3">G</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>J</td>
+                    <td>K</td>
+                </tr>
+            </table>
+<br>
+<h1>Tablas avanzadas</h1>
+<br>
+<h3>Análisis de ventas</h3>
+        <table summary="Análisis de ventas anuales">
+            <caption>Análisis de ventas anuales</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">AÑO</th>
+                    <th colspan="4" scope="col">Expansión de ventas</th>
+                </tr>
+                <tr>
+                    <th scope="col">Producto A</th>
+                    <th scope="col">Producto B</th>
+                    <th scope="col">Producto C</th>
+                    <th scope="col">Producto D</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th rowspan="2" scope="col">AÑO</th>
+                    <th scope="col">Producto A</th>
+                    <th scope="col">Producto B</th>
+                    <th scope="col">Producto C</th>
+                    <th scope="col">Producto D</th>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="col">Expansión de ventas</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <th scope="row">N-3</th><td>-</td><td>-</td><td>-</td><td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row">N-2</th><td>3</td><td>5</td><td>8</td><td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">N-1</th><td>4</td><td>4</td><td>7</td><td>3</td>
+                </tr>
+                <tr>
+                    <th scope="row">N</th><td>5</td><td>7</td><td>6</td><td>2</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+</body>
+</html>
